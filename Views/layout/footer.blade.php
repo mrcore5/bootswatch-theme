@@ -4,8 +4,11 @@
 	<style>
 		.footer {
 			border-radius: 0px;
-			padding: 20px 0px 10px 0px;
 			border-bottom: 0px;
+			margin-top: 15px;
+		}
+		.footer .navbar {
+			margin-bottom: 0px;
 		}
 		.footer .no-container {
 			padding: 0px 15px 0px 15px;
@@ -35,8 +38,8 @@
 			padding: 0px 15px 0px 5px;
 		}
 		.footer .copyright {
-			padding: 0px;
 			font-size: smaller;
+			padding-right: 20px;
 		}
 		#btn-scroll-up {
 			display: none;
@@ -53,64 +56,66 @@
 @section('footer')
 
 	<!-- Layout Footer -->
-	<footer class="navbar navbar-default footer">
-		<!--<div class="{{ $container }}">
-			<div class="row content1">
-				<div class="col-lg-12X">
-					<div class="col-md-3 col-sm-4">
-						<ul class="nav navbar-nav">
-							<li class="navbar-brand">GitHub</li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact & support</a></li>
-							<li><a href="#">Enterprise</a></li>
-							<li><a href="#">Site status</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<ul class="nav navbar-nav">
-							<li class="navbar-brand">Applications</li>
-							<li><a href="#">Product for Mac</a></li>
-							<li><a href="#">Product for Windows</a></li>
-							<li><a href="#">Product for Eclipse</a></li>
-							<li><a href="#">Product mobile apps</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<ul class="nav navbar-nav">
-							<li class="navbar-brand">Services</li>
-							<li><a href="#">Web analytics</a></li>
-							<li><a href="#">Presentations</a></li>
-							<li><a href="#">Code snippets</a></li>
-							<li><a href="#">Job board</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-12">
-						<ul class="nav navbar-nav">
-							<li class="navbar-brand">Documentation</li>
-							<li><a href="#">Product Help</a></li>
-							<li><a href="#">Developer API</a></li>
-							<li><a href="#">Product Markdown</a></li>
-							<li><a href="#">Product Pages</a></li>
-						</ul>
+	<footer class="footer">
+		<div class="navbar navbar-default">
+			<div class="{{ $footerContainer }}">
+				<div class="row content1">
+					<div class="col-lg-12X">
+						<div class="col-md-3 col-sm-4">
+							<ul class="nav navbar-nav">
+								<li class="navbar-brand">GitHub</li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact & support</a></li>
+								<li><a href="#">Enterprise</a></li>
+								<li><a href="#">Site status</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<ul class="nav navbar-nav">
+								<li class="navbar-brand">Applications</li>
+								<li><a href="#">Product for Mac</a></li>
+								<li><a href="#">Product for Windows</a></li>
+								<li><a href="#">Product for Eclipse</a></li>
+								<li><a href="#">Product mobile apps</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<ul class="nav navbar-nav">
+								<li class="navbar-brand">Services</li>
+								<li><a href="#">Web analytics</a></li>
+								<li><a href="#">Presentations</a></li>
+								<li><a href="#">Code snippets</a></li>
+								<li><a href="#">Job board</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-12">
+							<ul class="nav navbar-nav">
+								<li class="navbar-brand">Documentation</li>
+								<li><a href="#">Product Help</a></li>
+								<li><a href="#">Developer API</a></li>
+								<li><a href="#">Product Markdown</a></li>
+								<li><a href="#">Product Pages</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		
-		<hr>-->
+			
+			<hr>
 
-		<div class="{{ $container }}">
-			<div class="row content2">
-				<div class="col-md-8">
-					<!--<ul class="nav navbar-nav">
-						<li><a href="#">Terms of Service</a></li>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Security</a></li>
-					</ul>-->
-				</div>
-				<div class="col-md-4 copyright">
-					<p class="muted pull-right">Copyright {{{ date('Y') }}} mRcore</p>
+			<div class="{{ $footerContainer }}">
+				<div class="row content2">
+					<div class="col-md-8">
+						<!--<ul class="nav navbar-nav">
+							<li><a href="#">Terms of Service</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Security</a></li>
+						</ul>-->
+					</div>
+					<div class="col-md-4 copyright">
+						<p class="muted pull-right">Copyright {{{ date('Y') }}} Matthew Reschke</p>
+					</div>
 				</div>
 			</div>
 		</div>

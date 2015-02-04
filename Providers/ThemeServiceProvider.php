@@ -3,7 +3,7 @@
 use View;
 use Config;
 use Layout;
-use Mrcore\Foundation\Support\ServiceProvider;
+use Mrcore\Modules\Foundation\Support\ServiceProvider;
 
 class ThemeServiceProvider extends ServiceProvider {
 
@@ -25,13 +25,16 @@ class ThemeServiceProvider extends ServiceProvider {
 		// Register additional views
 		View::addLocation(__DIR__.'/../Views');
 
-		// Get main css
+		// Set main bootswatch css theme
 		$css = Config::get('theme.css');
-		
 		Layout::css('css/bootstrap/'.$css);
 
 		// Bootstrap Container
-		Layout::container(true);
+		Layout::container(
+			Config::get('theme.container'),
+			Config::get('theme.header_container'),
+			Config::get('theme.footer_container')
+		);
 
 	}
 

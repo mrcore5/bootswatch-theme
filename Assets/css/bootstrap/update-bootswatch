@@ -1,0 +1,22 @@
+#!/bin/bash
+path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+wget -O $path/default.min.css http://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.min.css
+wget -O $path/cerulean.min.css http://bootswatch.com/cerulean/bootstrap.min.css
+wget -O $path/cosmo.min.css http://bootswatch.com/cosmo/bootstrap.min.css
+wget -O $path/cyborg.min.css http://bootswatch.com/cyborg/bootstrap.min.css
+wget -O $path/darkly.min.css http://bootswatch.com/darkly/bootstrap.min.css
+wget -O $path/flatly.min.css http://bootswatch.com/flatly/bootstrap.min.css
+wget -O $path/journal.min.css http://bootswatch.com/journal/bootstrap.min.css
+wget -O $path/lumen.min.css http://bootswatch.com/lumen/bootstrap.min.css
+wget -O $path/paper.min.css http://bootswatch.com/paper/bootstrap.min.css
+wget -O $path/readable.min.css http://bootswatch.com/readable/bootstrap.min.css
+wget -O $path/sandstone.min.css http://bootswatch.com/sandstone/bootstrap.min.css
+wget -O $path/simplex.min.css http://bootswatch.com/simplex/bootstrap.min.css
+wget -O $path/slate.min.css http://bootswatch.com/slate/bootstrap.min.css
+wget -O $path/spacelab.min.css http://bootswatch.com/spacelab/bootstrap.min.css
+wget -O $path/superhero.min.css http://bootswatch.com/superhero/bootstrap.min.css
+wget -O $path/united.min.css http://bootswatch.com/united/bootstrap.min.css
+wget -O $path/yeti.min.css http://bootswatch.com/yeti/bootstrap.min.css
+
+cp $path/default.min.css $path/bootstrap.min.css
+

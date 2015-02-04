@@ -6,25 +6,11 @@
 
 	<!-- Header CSS -->
 	<style>
-		.navbar-user {
-			width: 30px;
-			margin: -15px 0px -12px 0px;
-			border: 2px solid #eeeeee;
-			border-radius: 4px;
+		.body {
+			margin-top: 15px;
 		}
 		.navbar {
 			border-radius: 0px;
-			min-height: 30px;
-			margin-bottom: 0px;
-		}
-		.navbar-brand {
-			padding: 11px 15px;
-		}
-		.navbar .dropdown-menu li a {
-			padding: 3px 20px;
-		}
-		.navbar-toggle {
-			margin-top: 3px;
 		}
 		.yamm .yamm-content {
 			padding: 15px 15px 0px 15px;
@@ -41,7 +27,7 @@
 	<!-- Layout Header -->
 	<div class="header">
 		<header class="navbar navbar-default yamm" id="top">
-			<div class="{{ $container }}">
+			<div class="{{ $headerContainer }}">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 					<span class="icon-bar"></span>

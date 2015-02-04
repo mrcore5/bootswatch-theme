@@ -4,13 +4,11 @@
 	<style>
 		body {
 			/* make room for our scroll-to-top button */
-			margin-bottom: 20px;
-		}
-		.container .body {
-			padding-top: 15px;
+			/*margin-bottom: 20px;*/
 		}
 		.no-container .body {
-			padding: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	</style>
 	@parent
