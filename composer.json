@@ -1,5 +1,5 @@
 {
-	"name": "mrcore/themes/bootstrap",
+	"name": "mrcore/themes-bootstrap",
 	"type": "library",
 	"description": "Mrcore Bootswatch Base Theme",
 	"keywords": ["mrcore", "framework", "theme", "laravel"],
