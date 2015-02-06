@@ -9,6 +9,16 @@
 		.body {
 			margin-top: 15px;
 		}
+		.navbar-user {
+			width: 25px;
+			margin: -15px 0px -9px 0px;
+			border: 2px solid #eeeeee;
+			border-radius: 150px;
+		}
+
+		.navbar-user, .navbar-user .caret {
+
+		}
 		.navbar {
 			border-radius: 0px;
 		}

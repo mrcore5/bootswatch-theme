@@ -4,7 +4,7 @@
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 				<img class="navbar-user" src="{{ asset('images/anonymous.png') }}" alt="avatar" />
-				<b class="caret"></b>
+				<!--<b class="caret"></b>-->
 			</a>
 
 			<ul class="dropdown-menu">

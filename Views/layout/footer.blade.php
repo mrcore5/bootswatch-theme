@@ -35,11 +35,10 @@
 			border: 0px;
 		}
 		.footer .content2 {
-			padding: 0px 15px 0px 5px;
+			padding: 0px 25px 5px 5px;
 		}
 		.footer .copyright {
 			font-size: smaller;
-			padding-right: 20px;
 		}
 		#btn-scroll-up {
 			display: none;

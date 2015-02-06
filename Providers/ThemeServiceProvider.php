@@ -21,10 +21,19 @@ class ThemeServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-
 		// Register additional views
+		// Needs to happen later here in boot() instead of register()
+		// Because we want these to register LAST so thay can be overridden early
 		View::addLocation(__DIR__.'/../Views');
+	}
 
+	/**
+	 * Register the application services.
+	 *
+	 * @return void
+	 */
+	public function register()
+	{
 		// Set main bootswatch css theme
 		$css = Config::get('theme.css');
 		Layout::css('css/bootstrap/'.$css);
@@ -35,17 +44,6 @@ class ThemeServiceProvider extends ServiceProvider {
 			Config::get('theme.header_container'),
 			Config::get('theme.footer_container')
 		);
-
-	}
-
-	/**
-	 * Register the application services.
-	 *
-	 * @return void
-	 */
-	public function register()
-	{
-		//
 	}
 
 }
