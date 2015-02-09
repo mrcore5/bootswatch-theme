@@ -3,6 +3,7 @@
 use View;
 use Config;
 use Layout;
+use Module;
 use Mrcore\Modules\Foundation\Support\ServiceProvider;
 
 class ThemeServiceProvider extends ServiceProvider {
@@ -21,10 +22,8 @@ class ThemeServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		// Register additional views
-		// Needs to happen later here in boot() instead of register()
-		// Because we want these to register LAST so thay can be overridden early
-		View::addLocation(__DIR__.'/../Views');
+		// Mrcore Module Tracking
+		Module::trace(get_class(), __function__);
 	}
 
 	/**
@@ -34,16 +33,8 @@ class ThemeServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		// Set main bootswatch css theme
-		$css = Config::get('theme.css');
-		Layout::css('css/bootstrap/'.$css);
-
-		// Bootstrap Container
-		Layout::container(
-			Config::get('theme.container'),
-			Config::get('theme.header_container'),
-			Config::get('theme.footer_container')
-		);
+		// Mrcore Module Tracking
+		Module::trace(get_class(), __function__);
 	}
 
 }

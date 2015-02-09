@@ -6,21 +6,18 @@
 
 	<!-- Header CSS -->
 	<style>
-		.body {
-			margin-top: 15px;
-		}
 		.navbar-user {
 			width: 25px;
 			margin: -15px 0px -9px 0px;
 			border: 2px solid #eeeeee;
 			border-radius: 150px;
 		}
-
 		.navbar-user, .navbar-user .caret {
 
 		}
 		.navbar {
 			border-radius: 0px;
+			margin-bottom: 5px;
 		}
 		.yamm .yamm-content {
 			padding: 15px 15px 0px 15px;
@@ -40,12 +37,12 @@
 			<div class="{{ $headerContainer }}">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
-					@yield('header-logo')
 				</div>
+				@yield('header-logo')
 				<div class="navbar-collapse collapse navbar-responsive-collapse">
 					<ul class="nav navbar-nav">
 						{{-- Add your custom left side header menus and items here --}}
