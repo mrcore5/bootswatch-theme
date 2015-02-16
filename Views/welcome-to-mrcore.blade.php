@@ -17,6 +17,7 @@
 			margin-bottom: 40px;
 		}
 		.quote {
+			color: #666;
 			font-size: 24px;
 		}
 		.footer {
@@ -28,7 +29,7 @@
 
 @section('content')
 	<div class="{{ $container }}">
-		<div class="title">mRcore 6</div>
+		<div class="title">mRcore</div>
 		<div class="quote">{{ Inspiring::quote() }}</div>
 	</div>
 @endsection
