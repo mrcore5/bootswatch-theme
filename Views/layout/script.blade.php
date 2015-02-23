@@ -13,7 +13,7 @@
 	@if (Layout::script())
 	<script>
 	@foreach (Layout::script() as $script) 
-	{{ $script }} 
+	{!! $script !!} 
 	@endforeach
 	</script>
 	@endif
