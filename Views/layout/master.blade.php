@@ -13,16 +13,13 @@
 		{!! Layout::viewport() !!} 
 		<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
 
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- html5shiv and respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
-		<script src="{{ asset('js/html5shiv.js') }}"></script>
-		<script src="{{ asset('js/respond.min.js') }}"></script>
+		<script src="{{ asset('js/shiv-bundle.js') }}"></script>
 		<![endif]-->
 
-		<!-- Font Awesome -->
-		<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/font-awesome-animation.min.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/yamm.css') }}" rel="stylesheet">
+		<!-- Bundles -->
+		<link href="{{ asset('css/theme-bundle.css') }}" rel="stylesheet">
 
 		<!-- mRcore Layout CSS -->
 		@foreach (Layout::css() as $css)

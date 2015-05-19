@@ -1,8 +1,7 @@
 @section('scripts')
 
-	{{-- Standard scripts --}}
-	<script src="{{ asset('js/jquery-2.1.1.min.js') }}"></script>
-	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+	{{-- Bundles --}}
+	<script src="{{ asset('js/theme-bundle.js') }}"></script>
 
 	{{-- Layout script file array --}}
 	@foreach (Layout::js() as $js) 
@@ -11,11 +10,11 @@
 
 	{{-- Layout script code array --}}
 	@if (Layout::script())
-	<script>
-	@foreach (Layout::script() as $script) 
-	{!! $script !!} 
-	@endforeach
-	</script>
+		<script>
+		@foreach (Layout::script() as $script) 
+			{!! $script !!}
+		@endforeach
+		</script>
 	@endif
 
 	{{-- Page script sections --}}
