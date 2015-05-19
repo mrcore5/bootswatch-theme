@@ -39,6 +39,7 @@
 		}
 		.footer .copyright {
 			font-size: smaller;
+			margin-top: 13px;
 		}
 		#btn-scroll-up {
 			display: none;
@@ -57,7 +58,7 @@
 	<!-- Layout Footer -->
 	<footer class="footer">
 		<div class="navbar navbar-default">
-			<div class="{{ $footerContainer }}">
+			<!--<div class="{{ $footerContainer }}">
 				<div class="row content1">
 					<div class="col-lg-12X">
 						<div class="col-md-3 col-sm-4">
@@ -101,7 +102,7 @@
 				</div>
 			</div>
 			
-			<hr>
+			<hr />-->
 
 			<div class="{{ $footerContainer }}">
 				<div class="row content2">
