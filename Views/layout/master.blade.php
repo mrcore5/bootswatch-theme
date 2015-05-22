@@ -49,10 +49,8 @@
 		@yield('footer')
 		@endif
 
+		@yield('scripts')
+
 	</body>
-
-
-	@yield('scripts')
-
 
 </html>
