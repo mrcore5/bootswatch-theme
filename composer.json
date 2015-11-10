@@ -3,10 +3,10 @@
 	"type": "library",
 	"description": "Mrcore Bootswatch Base Theme",
 	"keywords": ["mrcore", "framework", "theme", "laravel"],
-	"homepage": "http://github.com/mreschke/mrcore-themes-bootswatch",
+	"homepage": "http://github.com/mrcore5/bootswatch-theme",
 	"license": "MIT",
 	"support": {
-		"issues": "https://github.com/mreschke/mrcore-theme-bootswatch/issues"
+		"issues": "https://github.com/mrcore5/bootswatch-theme/issues"
 	},
 	"authors": [
 		{
@@ -15,9 +15,6 @@
 			"homepage": "http://mreschke.com"
 		}
 	],
-	"require": {
-		"php": ">=5.4.0"
-	},
 	"autoload": {
 		"psr-4": {
 			"Mrcore\\Themes\\Bootswatch\\": ""
