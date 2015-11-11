@@ -4,7 +4,7 @@ use View;
 use Config;
 use Layout;
 use Module;
-use Mrcore\Modules\Foundation\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 class ThemeServiceProvider extends ServiceProvider {
 
