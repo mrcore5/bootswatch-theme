@@ -4,14 +4,14 @@
 	<script src="{{ asset('js/theme-bundle.js') }}"></script>
 
 	{{-- Layout script file array --}}
-	@foreach (Layout::js() as $js) 
+	@foreach (Layout::js() as $js)
 	<script src="{{ asset($js) }}"></script>
 	@endforeach
 
 	{{-- Layout script code array --}}
 	@if (Layout::script())
 		<script>
-		@foreach (Layout::script() as $script) 
+		@foreach (Layout::script() as $script)
 			{!! $script !!}
 		@endforeach
 		</script>
