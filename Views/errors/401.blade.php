@@ -1,25 +1,29 @@
 @extends('layout')
 
 @section('title')
-	Item Not Found
+	Access Denied
 @endsection
 
 @section('content')
 
-	<div class="error-container">
-		<div class="well">
+	<div class="container error-container">
+		<div class="well" style="margin: 15px">
 			<h1>
-				<i class="fa fa-sitemap"></i>
-				404 Page Not Found
+				<i class="fa fa-lock"></i>
+				401 Unauthorized
 			</h1>
 
 			<hr />
-			<h3>We looked everywhere but we couldn't find it!</h3>
+			<h3>Access denied to requested url {{ Request::path() }}</h3>
 
 			<div>
 				<h4>Try one of the following:</h4>
 
 				<ul class="list-unstyled">
+					<li>
+						<i class="fa fa-hand-o-right"></i>
+						Sign in as an authorized user
+					</li>
 					<li>
 						<i class="fa fa-hand-o-right"></i>
 						Check the url for typos

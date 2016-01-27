@@ -1,26 +1,23 @@
 @extends('layout')
 
 @section('title')
-	Something Went Wrong
-@stop
+	Item Not Found
+@endsection
 
 @section('content')
 
-	<div class="error-container">
-		<div class="well">
+	<div class="container error-container">
+		<div class="well" style="margin: 15px">
 			<h1>
-				<i class="fa fa-exclamation-circle"></i>
-				500 Internal Server Error
+				<i class="fa fa-sitemap"></i>
+				404 Page Not Found
 			</h1>
 
 			<hr />
-			<h3>
-				But we are working on it!
-			</h3>
-
+			<h3>We looked everywhere but we couldn't find it!</h3>
 
 			<div>
-				<h4>Meanwhile, try one of the following:</h4>
+				<h4>Try one of the following:</h4>
 
 				<ul class="list-unstyled">
 					<li>
@@ -32,18 +29,8 @@
 						<i class="fa fa-hand-o-right"></i>
 						Search or browse for the document manually
 					</li>
-
 				</ul>
 			</div>
-
-
-			@if (Config::get('app.debug') == true)
-			<hr />
-			<div>
-				<h4 class="smaller">Exception:</h4>
-				<pre>{{ @$exception }}</pre>
-			</div>
-			@endif
 
 			<hr />
 
@@ -61,4 +48,4 @@
 		</div>
 	</div>
 
-@stop
+@endsection
