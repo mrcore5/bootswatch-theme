@@ -8,25 +8,11 @@
 			</a>
 
 			<ul class="dropdown-menu">
-				<li>
-					<a href="#">
-						<i class="fa fa-plus"></i>
-						New Post
-					</a>
-				</li>
-				<li class="divider"></li>
-
 				<li class="dropdown-header">Administrator</li>
 				<li>
 					<a href="#">
 						<i class="fa fa-lock"></i>
 						Admin
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-link"></i>
-						Router
 					</a>
 				</li>
 				<li class="divider"></li>
@@ -45,6 +31,5 @@
 			</a>
 		</li>
 	@endif
-
 
 @stop
