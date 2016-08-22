@@ -1,5 +1,35 @@
 @extends('layout')
 
+@include('components.notify')
+
+@section('content')
+
+	<home inline-template>
+		<p>
+			Welcome @{{ user2 }}
+		</p>
+
+		<p>
+			Not @{{ user2 }}?  Enter your name <input type="text" v-model="user2">
+		</p>
+
+		<button @click="notify">Notify Now</button>
+
+	</home>
+
+	<div class="{{ $container }}">
+		<div class="title">mRcore</div>
+	</div>
+@endsection
+
+
+
+
+
+
+
+
+
 @section('css')
 	<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 	<style>
@@ -24,12 +54,4 @@
 			display: none;
 		}
 	</style>
-@endsection
-
-
-@section('content')
-	<div class="{{ $container }}">
-		<div class="title">mRcore</div>
-		<div class="quote">{{ Inspiring::quote() }}</div>
-	</div>
 @endsection
