@@ -1,6 +1,5 @@
 @extends('layout.master')
 
-
 @section('css')
 	@parent
 @stop

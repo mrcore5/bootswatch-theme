@@ -18,6 +18,8 @@ elixir(function(mix) {
 		"font-awesome-animation.min.css",
 		"font-awesome.min.css",
 		"yamm.css",
+		"select2.css",
+		"select2-bootstrap.css",
 		"jquery.growl.css",
 		"dataTables.bootstrap.css"
 	], 'Assets/css/theme-bundle.css', 'Assets/css');
@@ -29,8 +31,9 @@ elixir(function(mix) {
 		"jquery.dataTables.bootstrap.js",
 		"jquery.growl.js",
 		"dataTables.js",
-		"bootstrap.min.js",
+		"select2.js",
 		"prism.js",
+		"bootstrap.min.js",
 		//"vue.js"
 	], 'Assets/js/theme-bundle.js', 'Assets/js');
 
