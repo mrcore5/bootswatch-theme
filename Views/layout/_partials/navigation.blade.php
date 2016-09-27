@@ -112,7 +112,7 @@
 			<div class="panel-body">
 				<ul id="nav-list" class="theme-bg-color-4 theme-border-color-3">
 				@foreach ($navItems as $item)
-					<li>
+					<li id="navigation-{{ $item['key'] }}">
 						<div class="nav-item @if ($page->key == $item['key']) active @endif">
 						<a @if (isset($item['url'])) href="{{ URL::to($item['url']) }}" @endif data-toggle="collapse" data-target="#toggleNav-{{$item['key']}}">
 						{!! $item['display'] !!}
@@ -122,7 +122,7 @@
 						<div class="subnav-container collapse @if ($page->key == $item['key']) in @endif" id="toggleNav-{{$item['key']}}">
 							<ul class="subnav-list theme-border-color-3 theme-bg-color-1">
 							@foreach ($item['subnav'] as $subnav)
-								<li @if (isset($page->subkey) && $page->subkey == $subnav['key']) class="active" @endif>
+								<li id="navigation-{{ $item['key'] }}-{{ $subnav['key'] }}" @if (isset($page->subkey) && $page->subkey == $subnav['key']) class="active" @endif>
 									<a href="{{ URL::to($subnav['url']) }}">{{ $subnav['display'] }}</a>
 								</li>
 							@endforeach
