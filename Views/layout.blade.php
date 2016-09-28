@@ -1,5 +1,5 @@
 @if (Layout::modeIs('raw'))
-	@yield('content')
+    @yield('content')
 @else
-	@include('layout.master')
+    @include('layout.master')
 @endif

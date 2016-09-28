@@ -34,13 +34,13 @@ Mrcore is open-sourced software licensed under the [MIT license](http://mreschke
 # original package.json
 
 {
-	"private": true,
-	"devDependencies": {
-			"gulp": "^3.8.8"
-	},
-	"dependencies": {
-		"laravel-elixir": "^5.0.0"
-	}
+    "private": true,
+    "devDependencies": {
+            "gulp": "^3.8.8"
+    },
+    "dependencies": {
+        "laravel-elixir": "^5.0.0"
+    }
 }
 
 # new package.json for webpack

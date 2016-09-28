@@ -1,44 +1,44 @@
 @section('scripts')
 
-	{{-- Bundles --}}
-	<script src="{{ asset('js/theme-bundle.js') }}"></script>
+    {{-- Bundles --}}
+    <script src="{{ asset('js/theme-bundle.js') }}"></script>
 
-	{{-- Layout script file array --}}
-	@foreach (Layout::js() as $js)
-	<script src="{{ asset($js) }}"></script>
-	@endforeach
+    {{-- Layout script file array --}}
+    @foreach (Layout::js() as $js)
+    <script src="{{ asset($js) }}"></script>
+    @endforeach
 
-	{{-- Layout script code array --}}
-	@if (Layout::script())
-		<script>
-		@foreach (Layout::script() as $script)
-			{!! $script !!}
-		@endforeach
-		</script>
-	@endif
+    {{-- Layout script code array --}}
+    @if (Layout::script())
+        <script>
+        @foreach (Layout::script() as $script)
+            {!! $script !!}
+        @endforeach
+        </script>
+    @endif
 
-	{{-- Page script sections --}}
-	@yield('script')
+    {{-- Page script sections --}}
+    @yield('script')
 
-	{{-- Master script code --}}
-	<script>
-	$(function() {
+    {{-- Master script code --}}
+    <script>
+    $(function() {
 
-		// Yamm
-		$(document).on('click', '.yamm .dropdown-menu', function(e) {
-			e.stopPropagation()
-		})
+        // Yamm
+        $(document).on('click', '.yamm .dropdown-menu', function(e) {
+            e.stopPropagation()
+        })
 
-		// btn-scroll-up animations
-		$(window).scroll(function(){
-			if($(window).scrollTop() >= 600) {
-				$('#btn-scroll-up').fadeIn(500);
-			} else {
-				$('#btn-scroll-up').fadeOut(500);
-			}
-		});
+        // btn-scroll-up animations
+        $(window).scroll(function(){
+            if($(window).scrollTop() >= 600) {
+                $('#btn-scroll-up').fadeIn(500);
+            } else {
+                $('#btn-scroll-up').fadeOut(500);
+            }
+        });
 
-	});
-	</script>
+    });
+    </script>
 
 @stop

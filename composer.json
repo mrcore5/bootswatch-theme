@@ -1,23 +1,23 @@
 {
-	"name": "mrcore/bootswatch-theme",
-	"type": "library",
-	"description": "Mrcore Bootswatch Base Theme",
-	"keywords": ["mrcore", "framework", "theme", "laravel"],
-	"homepage": "http://github.com/mrcore5/bootswatch-theme",
-	"license": "MIT",
-	"support": {
-		"issues": "https://github.com/mrcore5/bootswatch-theme/issues"
-	},
-	"authors": [
-		{
-			"name": "Matthew Reschke",
-			"email": "mail@mreschke.com",
-			"homepage": "http://mreschke.com"
-		}
-	],
-	"autoload": {
-		"psr-4": {
-			"Mrcore\\Themes\\Bootswatch\\": ""
-		}
-	}
+    "name": "mrcore/bootswatch-theme",
+    "type": "library",
+    "description": "Mrcore Bootswatch Base Theme",
+    "keywords": ["mrcore", "framework", "theme", "laravel"],
+    "homepage": "http://github.com/mrcore5/bootswatch-theme",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/mrcore5/bootswatch-theme/issues"
+    },
+    "authors": [
+        {
+            "name": "Matthew Reschke",
+            "email": "mail@mreschke.com",
+            "homepage": "http://mreschke.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mrcore\\Themes\\Bootswatch\\": ""
+        }
+    }
 }
