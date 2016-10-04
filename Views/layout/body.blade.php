@@ -4,17 +4,15 @@
     <style>
         body {
             /* make room for our scroll-to-top button */
-            /*margin-bottom: 20px;*/
+            margin-bottom: 20px;
         }
-        .body {
-            /* Some top margin for ?simple view */
-            /* There is margin-bottom on .navbar too */
-            margin-top: 15px;
+        .container .body {
+            padding-top: 15px !important;
         }
         .no-container .body {
-            padding-left: 15px;
-            padding-right: 15px;
+            padding: 15px !important;
         }
+
     </style>
     @parent
 
