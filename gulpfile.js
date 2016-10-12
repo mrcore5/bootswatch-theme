@@ -34,7 +34,8 @@ elixir(function(mix) {
         "select2.js",
         "prism.js",
         "bootstrap.min.js",
-        "vue.js"
+        "vue.js",
+        "lodash.min.js"
     ], 'Assets/js/theme-bundle.js', 'Assets/js');
 
     mix.scripts([
