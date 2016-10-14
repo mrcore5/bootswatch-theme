@@ -27,6 +27,8 @@ elixir(function(mix) {
     mix.scripts([
     	"lodash.js",
     	"jquery-3.1.1.js",
+    	"vue-2.0.js",
+		"bootstrap.js",
         "jquery.hotkeys.min.js",
         "jquery.dataTables.1.10.7.min.js",
         "jquery.dataTables.bootstrap.js",
@@ -34,9 +36,7 @@ elixir(function(mix) {
         "dataTables.js",
         "select2.js",
         "prism.js",
-        "bootstrap.js",
-        "vue.js",
-    ], 'Assets/js/theme-bundle.js', 'Assets/js');
+        ], 'Assets/js/theme-bundle.js', 'Assets/js');
 
     mix.scripts([
         "html5shiv.js",
