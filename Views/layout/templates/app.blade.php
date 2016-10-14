@@ -2,6 +2,7 @@
 @include('layout._partials.show-help')
 @include('layout._partials.spinner')
 @include('layout.templates.app-css')
+@include('layout.templates.app-script')
 
 @section('css')
     @parent
@@ -49,4 +50,8 @@
     @endif
 
     @yield('utilities')
+@stop
+
+@section('script')
+    @parent
 @stop
