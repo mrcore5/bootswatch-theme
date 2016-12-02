@@ -25,10 +25,10 @@ elixir(function(mix) {
     ], 'Assets/css/theme-bundle.css', 'Assets/css');
 
     mix.scripts([
-    	"lodash.js",
-    	"jquery-3.1.1.js",
-    	"vue-2.0.js",
-		"bootstrap.js",
+        "lodash.js",
+        "jquery-3.1.1.js",
+        "vue-2.0.js",
+        "bootstrap.js",
         "jquery.hotkeys.min.js",
         "jquery.dataTables.1.10.7.min.js",
         "jquery.dataTables.bootstrap.js",
