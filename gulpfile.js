@@ -26,7 +26,7 @@ elixir(function(mix) {
 
     mix.scripts([
         "lodash.js",
-        "jquery-3.1.1.js",
+        "jquery-3.2.1.js", //"jquery-2.2.4.js",
         "vue-2.0.js",
         "bootstrap.js",
         "jquery.hotkeys.min.js",

@@ -6,28 +6,28 @@ jQuery.fn.dataTableExt.oApi.fnSetFilteringDelay = function ( oSettings, iDelay )
     var
         _that = this,
         iDelay = (typeof iDelay == 'undefined') ? 400 : iDelay;
-    
+
     this.each( function ( i ) {
         $.fn.dataTableExt.iApiIndex = i;
         var
-            $this = this, 
-            oTimerId = null, 
+            $this = this,
+            oTimerId = null,
             sPreviousSearch = null,
             anControl = $( 'input', _that.fnSettings().aanFeatures.f );
-        
+
             anControl.unbind( 'keyup' ).bind( 'keyup', function() {
             var $$this = $this;
 
             if (sPreviousSearch === null || sPreviousSearch != anControl.val()) {
                 window.clearTimeout(oTimerId);
-                sPreviousSearch = anControl.val();  
+                sPreviousSearch = anControl.val();
                 oTimerId = window.setTimeout(function() {
                     $.fn.dataTableExt.iApiIndex = i;
                     _that.fnFilter( anControl.val() );
                 }, iDelay);
             }
         });
-        
+
         return this;
     } );
     return this;
@@ -48,10 +48,10 @@ $(document).ready(function() {
     var oTable = $('.dataTable').dataTable({
         //Save State in Cookies
         "bStateSave": false,
-                
+
         //Turn off initial sorting, I let my model do the default sort
         "aaSorting": [],
-        
+
         //Show Main filter
         "bFilter": true,
 
@@ -62,7 +62,7 @@ $(document).ready(function() {
         "oLanguage": {
             //Text of all search textbox
             //"sSearch": "Filter:",
-            
+
             //Text and options of page length dropdown
             "sLengthMenu": 'Show <select class="form-control input-sm">'+
                 '<option value="10">10</option>'+
@@ -84,8 +84,8 @@ $(document).ready(function() {
     //Just uncomment the <tboot><th>stuff and it will work.  I turned it off because it doesn't work when
     //there are multiple tables on the page
 
- 
-    //The Footer Column Filter Textboxes    
+
+    //The Footer Column Filter Textboxes
     //$("tfoot input").keyup( function () {
         //oTable.fnFilter( this.value, $("tfoot input").index(this) );
     //} );
@@ -127,7 +127,7 @@ $(document).ready(function() {
                 this.value = asInitVals[$("tfoot input").index(this)];
         }
     } );
-    
+
     //Enable Fixed Headers
     //new FixedHeader( oTable );
 });
