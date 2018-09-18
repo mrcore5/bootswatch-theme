@@ -1,4 +1,4 @@
-<?php namespace Mrcore\Themes\Bootswatch\Providers;
+<?php namespace Mrcore\BootswatchTheme\Providers;
 
 use View;
 use Config;
@@ -6,7 +6,7 @@ use Layout;
 use Module;
 use Illuminate\Support\ServiceProvider;
 
-class ThemeServiceProvider extends ServiceProvider
+class BootswatchThemeServiceProvider extends ServiceProvider
 {
 
     /**

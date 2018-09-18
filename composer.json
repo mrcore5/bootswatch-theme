@@ -17,7 +17,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Mrcore\\Themes\\Bootswatch\\": ""
+            "Mrcore\\BootswatchTheme\\": ""
         }
     }
 }
