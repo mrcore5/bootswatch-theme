@@ -15,10 +15,10 @@ return [
 
     // These app paths for module and console command usage
     'paths' => [
-        'psr4' => '',
-        'assets' => 'Assets',
-        'public' => 'Assets',
-        'config' => 'Config',
+        'psr4' => 'src',
+        'assets' => null,
+        'public' => 'public',
+        'config' => 'config',
         'database' => null,
         'migrations' => null,
         'factories' => null,
@@ -26,7 +26,7 @@ return [
         'tests' => null,
         'routes' => null,
         'route_prefix' => null,
-        'views' => 'Views',
+        'views' => 'resources/views',
         'view_prefix' => null,
     ],
 

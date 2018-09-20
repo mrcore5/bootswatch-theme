@@ -1,9 +1,9 @@
 {
     "name": "mrcore/bootswatch-theme",
-    "type": "library",
     "description": "Mrcore Bootswatch Base Theme",
     "keywords": ["mrcore", "framework", "theme", "laravel"],
     "homepage": "http://github.com/mrcore5/bootswatch-theme",
+    "type": "library",
     "license": "MIT",
     "support": {
         "issues": "https://github.com/mrcore5/bootswatch-theme/issues"
@@ -17,7 +17,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Mrcore\\BootswatchTheme\\": ""
+            "Mrcore\\BootswatchTheme\\": "src/"
         }
     }
 }
