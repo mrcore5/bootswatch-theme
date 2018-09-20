@@ -1,10 +1,10 @@
-## Mrcore Bootswatch Theme v5.7
+## mRcore Bootswatch Theme v5.7
 
 `mrcore/bootswatch-theme` is a module for the [mRcore Framework](https://github.com/mrcore5/framework)
 
 This module provides a simple bootsrap layout and gives you all the themes from https://bootswatch.com
 
-## What Is Mrcore
+## What Is mRcore
 
 mRcore is a module system for Laravel allowing you to build all your applications as reusable modules.
 Module resemble the Laravel folder structure and can be plugged into a single Laravel instance.

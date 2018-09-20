@@ -4,7 +4,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header dyna-accent-border">
-                    <h4 class="modal-title" id="myModalLabel" style="border:0px;">{{ $showHelp->title or 'Help & Information'}}</h4>
+                    <h4 class="modal-title" id="myModalLabel" style="border:0px;">{{ @$showHelp->title ?: 'Help & Information'}}</h4>
                 </div>
                 <div class="modal-body" style="padding:20px">
                     @yield('show-help-content')
