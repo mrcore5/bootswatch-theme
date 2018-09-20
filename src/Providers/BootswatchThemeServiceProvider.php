@@ -1,8 +1,5 @@
 <?php namespace Mrcore\BootswatchTheme\Providers;
 
-use View;
-use Config;
-use Layout;
 use Module;
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +11,18 @@ class BootswatchThemeServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = true;
+    protected $defer = false;
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        // Mrcore Module Tracking
+        Module::trace(get_class(), __function__);
+    }
 
     /**
      * Bootstrap the application services.
@@ -28,13 +36,14 @@ class BootswatchThemeServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the application services.
+     * Get the services provided by the provider.
      *
-     * @return void
+     * @return array
      */
-    public function register()
+    public function provides()
     {
-        // Mrcore Module Tracking
-        Module::trace(get_class(), __function__);
+        // Only required if $defer = true and you add bindings in register()
+        // Only use if the provier is super simple and basically only has a simle binding
+        //return ['Mrcore\BootswatchTheme\Stuff', 'other bindings...'];
     }
 }

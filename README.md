@@ -1,14 +1,22 @@
 ## Mrcore Bootswatch Theme v2.0
 
-This is an mRcore theme that provides the 16 https://bootswatch.com http://getbootstrap.com themes.
+`mrcore/bootswatch-theme` is a module for the [mRcore Framework](https://github.com/mrcore5/framework)
+
+This module provides a simple bootsrap layout and gives you all the themes from https://bootswatch.com
 
 ## What Is Mrcore
 
-Mrcore is a set of Laravel components used to build various systems.
-It is a framework, a development platform and a CMS.  It is a modularized version of Laravel
-providing better package development support.  Think of Laravel 4.x workbenches on steroids.
+mRcore is a module system for Laravel allowing you to build all your applications as reusable modules.
+Module resemble the Laravel folder structure and can be plugged into a single Laravel instance.
+mRcore solves module loading dependency order and in-place live asset handling.  Modules can be
+full web UIs, REST APIs and/or full Console command line apps.  A well build module becomes your
+shared PHP library, a native API, which can be reused as dependencies in other modules.
+
+We firmly believe that all code should be built as modules and not in Laravels directory structure itself.
+Laravel simply becomes the "app server".  A single Laravel instance can host any number of modules.
 
 See https://github.com/mrcore5/framework for details and installation instructions.
+
 
 ## Official Documentation
 
@@ -19,7 +27,10 @@ Configure it in your `System/config/modules.php` file under the `BaseTheme` sect
 ## Versions
 
 * 1.0 is for Laravel 5.1 and below
-* 2.0 is for Laravel 5.2 and above
+* 2.0 is for Laravel 5.3, 5.4, 5.5
+* 5.6 is for Laravel 5.6
+* 5.7 is for Laravel 5.7
+* ... Following Laravel versions from here on
 
 ## Contributing
 
@@ -27,11 +38,12 @@ Thank you for considering contributing to the mRcore framework!  Fork and pull!
 
 ### License
 
-Mrcore is open-sourced software licensed under the [MIT license](http://mreschke.com/license/mit)
+mRcore is open source software licensed under the [MIT license](http://mreschke.com/license/mit)
 
 
+# Notes
 
-# original package.json
+# Original package.json
 
 {
     "private": true,
@@ -43,7 +55,7 @@ Mrcore is open-sourced software licensed under the [MIT license](http://mreschke
     }
 }
 
-# new package.json for webpack
+# New package.json for webpack
 
 {
   "private": true,
