@@ -1,4 +1,4 @@
-## Mrcore Bootswatch Theme v2.0
+## Mrcore Bootswatch Theme v5.7
 
 `mrcore/bootswatch-theme` is a module for the [mRcore Framework](https://github.com/mrcore5/framework)
 
