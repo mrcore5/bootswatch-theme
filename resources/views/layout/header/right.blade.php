@@ -1,4 +1,3 @@
-
 @include('layout.menu.user')
 
 @section('header-right')

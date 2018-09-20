@@ -33,6 +33,43 @@ class BootswatchThemeServiceProvider extends ServiceProvider
     {
         // Mrcore Module Tracking
         Module::trace(get_class(), __function__);
+
+        // Register publishers
+        $this->registerPublishers();
+    }
+
+    /**
+     * Define the published resources and configs.
+     *
+     * @return void
+     */
+    protected function registerPublishers()
+    {
+        // Only applies if running in console
+        if (!$this->app->runningInConsole()) return;
+
+        // App base path
+        $path = realpath(__DIR__.'/../../');
+
+        // Config publishing rules
+        // ./artisan vendor:publish --tag="mrcore.bootswatch-theme.configs"
+        $this->publishes([
+            "$path/config" => base_path('/config/mrcore'),
+        ], 'mrcore.bootswatch-theme.configs');
+
+        /*
+        // Migration publishing rules
+        // ./artisan vendor:publish --tag="mrcore.wiki.migrations"
+        $this->publishes([
+            "$path/database/migrations" => base_path('/database/migrations'),
+        ], 'mrcore.wiki.migrations');
+
+        // Seed publishing rules
+        // ./artisan vendor:publish --tag="mrcore.wiki.seeds"
+        $this->publishes([
+            "$path/database/seeds" => base_path('/database/seeds'),
+        ], 'mrcore.wiki.seeds');
+        */
     }
 
     /**
