@@ -9,7 +9,7 @@
         .container .body {
             padding-top: 15px !important;
         }
-        .no-container .body {
+        .container-fluid .body {
             padding: 15px !important;
         }
 
