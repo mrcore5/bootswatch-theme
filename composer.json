@@ -1,6 +1,5 @@
 {
     "name": "mrcore/bootswatch-theme",
-    "version": "5.3",
     "type": "library",
     "description": "Mrcore Bootswatch Base Theme",
     "keywords": ["mrcore", "framework", "theme", "laravel"],
